@@ -1,7 +1,5 @@
 package io.zipcoder.currencyconverterapplication;
 
-import io.zipcoder.currencyconverterapplication.currencies.AustralianDollar;
-
 public enum CurrencyType {
     AUSTRALIAN_DOLLAR(2.70),
     CANADIAN_DOLLAR(2.64),
@@ -27,14 +25,8 @@ public enum CurrencyType {
     }
 
     public static CurrencyType getTypeOfCurrency(ConvertableCurrency currency) {
-        if (currency.equals(AUSTRALIAN_DOLLAR)){
+            return currency.getCurrencyType();
 
-
-
-
-        }
-           return null;
-     //  }
-      // return CurrencyType;
     }
+
 }
